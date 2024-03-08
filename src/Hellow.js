@@ -15,7 +15,7 @@ export default function Hellow() {
       {
         status ? <h1>Hellow World</h1>  :  null
       }
-      <button className='btn' onClick={show}>Show & Show</button>
+      <button className='btn' onClick={show}>Show & Hide</button>
     </div>
   )
 }
