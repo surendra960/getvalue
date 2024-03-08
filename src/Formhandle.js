@@ -18,7 +18,7 @@ export default function Formhandle() {
     <div className="App">
       <h1>Handle Form In React</h1>
       <form action="" onSubmit={getFormData}>
-        <input type="text" placeholder='Enter name'  onChange={nameChange}/><br/><br/>
+        <input type="text" placeholder='Enter name' value={name}  onChange={nameChange}/><br/><br/>
         <select onSubmit={getFormData} name="" id="" onChange={(e)=>setInterest(e.target.vaule)}>
           <option value="">Select Options</option>
           <option value="">Marvel</option>
@@ -27,6 +27,7 @@ export default function Formhandle() {
         <input type="checkbox"  onChange={(e)=>setTnc(e.target.checked)}/> <span>Accept Terms & Condtion</span>
         <br/><br/>
         <button type='submit'>Submit</button>
+        <button>Clear</button>
       </form>
     </div>
   )

@@ -31,6 +31,7 @@ import Suri from './Suri';
 import Hellow from './Hellow';
 import './App.css';
 import Formhandle from './Formhandle';
+import Profile from './Profile';
 
 function App() {
   const [value, setValue] = useState('');
@@ -51,6 +52,8 @@ function App() {
       <Suri />
       <Hellow />
       <Formhandle />
+      <Profile/>
+      
     </div>
   );
 }
