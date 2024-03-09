@@ -6,6 +6,7 @@ import Formhandle from './Formhandle';
 import Profile from './Profile';
 import Login from './Login';
 import User from './User';
+import Members from './Members';
 function App() {
   const [value, setValue] = useState('');
 
@@ -29,8 +30,13 @@ function App() {
       <Formhandle />
       <Profile/>
       <Login/>
-      
       <User data= {getDataa}/>
+      <div style = {{float:'right'}}>
+        <Members data ={getDataa}/>
+        </div>
+        <User data= {getDataa}/>
+        <User data= {getDataa}/>
+        <User data= {getDataa}/>
     </div>
   );
 }
