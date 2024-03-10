@@ -7,6 +7,8 @@ import Profile from './Profile';
 import Login from './Login';
 import User from './User';
 import Members from './Members';
+import Useeffect from './Useeffect';
+import Useeffectrestrict from './Useeffectrestrict';
 function App() {
   const [value, setValue] = useState('');
 
@@ -37,6 +39,8 @@ function App() {
         <User data= {getDataa}/>
         <User data= {getDataa}/>
         <User data= {getDataa}/>
+        <Useeffect/>
+        <Useeffectrestrict/>
     </div>
   );
 }
