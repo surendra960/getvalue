@@ -10,6 +10,7 @@ import Members from './Members';
 import Useeffect from './Useeffect';
 import Useeffectrestrict from './Useeffectrestrict';
 import Bootstrapuse from './Bootstrapuse';
+import Maparrayobj from './Maparrayobj';
 function App() {
   const [value, setValue] = useState('');
 
@@ -43,6 +44,7 @@ function App() {
         <Useeffect/>
         <Useeffectrestrict/>
         <Bootstrapuse/>
+        <Maparrayobj/>
     </div>
   );
 }
