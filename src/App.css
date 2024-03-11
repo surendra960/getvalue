@@ -48,8 +48,8 @@
   border-collapse: collapse;
 }
 
-.excel-table th,
+/* .excel-table th,
 .excel-table td {
   border: 1px solid black;
   padding: 8px;
-}
+} */

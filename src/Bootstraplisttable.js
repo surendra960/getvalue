@@ -6,10 +6,10 @@ import './App.css';
 
 export default function BootstraplistTable() {
   const users = [
-    { name: "anil",  email: "anil@test.com",   contact: 111 },
-    { name: "sidhu", email: "shidu@test.com", contact: 993 },
-    { name: "sam",   email: "sam@test.com",     contact: 2343 },
-    { name: "peter", email: "peter@test.com", contact: 111}
+    { name: "anil",  email: "anil@test.com",   contact: 111 , address : "XYZ1" },
+    { name: "sidhu", email: "shidu@test.com", contact: 993  , address : "XYZ1"},
+    { name: "sam",   email: "sam@test.com",     contact: 2343 , address : "XYZ1" },
+    { name: "peter", email: "peter@test.com", contact: 111 , address : "XYZ1"}
   ];
   
   return (
@@ -23,6 +23,7 @@ export default function BootstraplistTable() {
             <th>Name</th>
             <th>Email</th>
             <th>Contact</th>
+            <th>Address</th>
           </tr>
         </thead>
         <tbody>
@@ -32,6 +33,7 @@ export default function BootstraplistTable() {
               <td>{item.name}</td>
               <td>{item.email}</td>
               <td>{item.contact}</td>
+              <td>{item.address}</td>
             </tr> : null
           ))}
         </tbody>
