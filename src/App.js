@@ -12,6 +12,7 @@ import Useeffectrestrict from './Useeffectrestrict';
 import Bootstrapuse from './Bootstrapuse';
 import Maparrayobj from './Maparrayobj';
 import Bootstraplisttable from './Bootstraplisttable';
+import Nestedlistnestedarray from './Nestedlistnestedarray';
 function App() {
   const [value, setValue] = useState('');
 
@@ -47,6 +48,7 @@ function App() {
         <Bootstrapuse/>
         <Maparrayobj/>
         <Bootstraplisttable/>
+        <Nestedlistnestedarray/>
     </div>
   );
 }
