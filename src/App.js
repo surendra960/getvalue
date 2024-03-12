@@ -18,6 +18,7 @@ import Useref from './Useref';
 import { useRef } from 'react';
 import { Button } from 'react-bootstrap';
 import Inputbox from './Inputbox';
+import Controlledcomponent from './Controlledcomponent';
 function App() {
   const [value, setValue] = useState('');
 
@@ -64,7 +65,7 @@ function App() {
         <h1>ForwardRef in React </h1>
         <Inputbox ref = {inputRef}/>
         <Button onClick={updateInput}>Update InputBox</Button>
-         
+         <Controlledcomponent/>
     </div>
   );
 }
