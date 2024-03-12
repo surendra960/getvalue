@@ -13,6 +13,8 @@ import Bootstrapuse from './Bootstrapuse';
 import Maparrayobj from './Maparrayobj';
 import Bootstraplisttable from './Bootstraplisttable';
 import Nestedlistnestedarray from './Nestedlistnestedarray';
+import Componentreuse from './Componentreuse';
+import Useref from './Useref';
 function App() {
   const [value, setValue] = useState('');
 
@@ -49,6 +51,10 @@ function App() {
         <Maparrayobj/>
         <Bootstraplisttable/>
         <Nestedlistnestedarray/>
+        <Componentreuse/>
+        
+        <Useref/>
+        
     </div>
   );
 }
