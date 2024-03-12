@@ -19,6 +19,7 @@ import { useRef } from 'react';
 import { Button } from 'react-bootstrap';
 import Inputbox from './Inputbox';
 import Controlledcomponent from './Controlledcomponent';
+import Uncontrolled from './Uncontrolled'
 function App() {
   const [value, setValue] = useState('');
 
@@ -66,6 +67,7 @@ function App() {
         <Inputbox ref = {inputRef}/>
         <Button onClick={updateInput}>Update InputBox</Button>
          <Controlledcomponent/>
+         <Uncontrolled/>
     </div>
   );
 }
