@@ -15,6 +15,9 @@ import Bootstraplisttable from './Bootstraplisttable';
 import Nestedlistnestedarray from './Nestedlistnestedarray';
 import Componentreuse from './Componentreuse';
 import Useref from './Useref';
+import { useRef } from 'react';
+import { Button } from 'react-bootstrap';
+import Inputbox from './Inputbox';
 function App() {
   const [value, setValue] = useState('');
 
@@ -28,6 +31,11 @@ function App() {
   function getDataa(){
     alert("hello from app")
   }
+  let inputRef = useRef(null);
+  function updateInput(){
+    inputRef.current.value = "1000"
+  }
+
   return (
     <div className="App">
       <h1>Get Input box value!</h1>
@@ -52,9 +60,11 @@ function App() {
         <Bootstraplisttable/>
         <Nestedlistnestedarray/>
         <Componentreuse/>
-        
         <Useref/>
-        
+        <h1>ForwardRef in React </h1>
+        <Inputbox ref = {inputRef}/>
+        <Button onClick={updateInput}>Update InputBox</Button>
+         
     </div>
   );
 }
