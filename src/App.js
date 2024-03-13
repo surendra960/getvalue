@@ -20,6 +20,7 @@ import { Button } from 'react-bootstrap';
 import Inputbox from './Inputbox';
 import Controlledcomponent from './Controlledcomponent';
 import Uncontrolled from './Uncontrolled'
+import Hoc from './Hoc';
 function App() {
   const [value, setValue] = useState('');
 
@@ -68,6 +69,7 @@ function App() {
         <Button onClick={updateInput}>Update InputBox</Button>
          <Controlledcomponent/>
          <Uncontrolled/>
+         <Hoc/>
     </div>
   );
 }
