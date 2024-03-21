@@ -21,6 +21,7 @@ import Inputbox from './Inputbox';
 import Controlledcomponent from './Controlledcomponent';
 import Uncontrolled from './Uncontrolled'
 import Hoc from './Hoc';
+import Routerr from './Routerr'
 function App() {
   const [value, setValue] = useState('');
 
@@ -70,6 +71,8 @@ function App() {
          <Controlledcomponent/>
          <Uncontrolled/>
          <Hoc/>
+         <Routerr/>
+
     </div>
   );
 }
