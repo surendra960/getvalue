@@ -22,6 +22,7 @@ import Controlledcomponent from './Controlledcomponent';
 import Uncontrolled from './Uncontrolled'
 import Hoc from './Hoc';
 import Routerr from './Routerr'
+// import Nav from './Nav'
 function App() {
   const [value, setValue] = useState('');
 
@@ -72,6 +73,7 @@ function App() {
          <Uncontrolled/>
          <Hoc/>
          <Routerr/>
+         {/* <Nav/> */}
 
     </div>
   );
